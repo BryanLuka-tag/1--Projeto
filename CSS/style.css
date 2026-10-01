@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+:root {
+    /* cores de uso geral */
+    --cor-principal: #1A2E40;
+    --cor-secundária: #3D5A73;
+    --cor-terciária: #F2F2F2;
+    --cor-suporte1: #BACBD9;
+    --cor-suporte3: #748494;
+    /* cores Básicas */
+    --cor-basica1: #ffffff;
+    --cor-basica2: #000000;
+    /* tipografia */
+    --tipografia: font 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* font Family */
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+.logoheader {
+    font-family: "Inter Tight", sans-serif;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.pfooter {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: var(--cor-basica1);
+}
+
+#fh1 {
+    color: var(--cor-secundária);
+    text-shadow: 0.5px 0.5px 1px;
+}
+
+.imageprincipal {
+    margin: 75px  auto;
+    width: 1000px;
+    height: 530px;
+    display: block;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow:
+    0 1px 10px rgba(5, 5, 5, 5.55),
+    0 1px 23px rgba(5, 5, 5, 5.55);
+}
+
+header {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+    gap: 15px;
+    padding: 25px 0px;
+
+    background-image: linear-gradient(45deg, #1A2E40, #3D5A73 60%);
+    text-align: center;
+}
+
+nav {
+    justify-content: center;
+    display: flex;
+    gap: 100px;
+    text-align: center;
+    width: 100%;
+
+}
+
+nav button {
+       
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: linear-gradient(to bottom, #1A2E40, #3D5A73 60%);
+            color: var(--cor-basica1);
+            text-shadow: 1px 1px 1px var(--cor-basica2);
+            padding: 10px 20px;
+            margin-left: 30px;
+            border-radius: 15px;
+            cursor: pointer;   
+            
+
+    
+}
+
+
+        button:hover {
+            background-image: linear-gradient(-45deg, #1A2E40, #3D5A73 60%);
+        }
+
+
+body {
+    font-family: "Inter Tight", sans-serif;
+    text-align: justify;
+    font-weight: 450;
+    font-size: 15px;
+    background-color: var(--cor-suporte2);
+}
+
+
+
+footer {
+    text-shadow: 1px 1px 1px black;
+    border-radius: 15px;
+    padding: 1px 0px;
+    text-align: center;
+    background-image: linear-gradient(-45deg, #1A2E40, #3D5A73 60%);
+}
+
+
+p {
+    text-align: justify;
+    font-weight: bolder;
+    color: var(--cor-basica2);
+}
+
+h2 {
+    text-align: center;
+    text-shadow: 1px 1px 0.3px;
+    color: var(--cor-secundária);
+}
+
+h1 {
+    text-shadow: 1px 1.5px 1px var(--cor-basica2);
+    color: var(--cor-basica1);
+    text-align: center;
+    
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" id="icon" type="image/x-icon" href="Image/Firefly.png">
+    <title>Cadastro</title>
+    <style>
+        :root {
+            /* cores de uso geral */
+            --cor-principal: #1A2E40;
+            --cor-secundária: #3D5A73;
+            --cor-terciária: #F2F2F2;
+            --cor-suporte1: #BACBD9;
+            --cor-suporte3: #748494;
+            /* cores Básicas */
+            --cor-basica1: #ffffff;
+            --cor-basica2: #000000;
+            /* tipografia */
+            --tipografia: font 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #email {
+            display: block;
+            margin-bottom: 25px;
+        }
+
+        #inscricao {
+            background-image: linear-gradient(to bottom, #1A2E40, #3D5A73 60%);
+            color: var(--cor-basica1);
+            text-shadow: 1px 1px 1px var(--cor-basica2);
+            padding: 10px 20px;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+
+        #inscricao:hover {
+            background-image: linear-gradient(-45deg, #1A2E40, #3D5A73 60%);
+        }
+
+        /* font Family */
+        @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+        header {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 15px;
+            gap: 15px;
+            padding: 25px 0;
+
+            background-image: linear-gradient(45deg, #1A2E40, #3D5A73 60%);
+            text-align: center;
+
+        }
+
+        main{
+            text-shadow: 1px 1.5px 1px var(--cor-basica2);
+            text-align: justify;
+        }
+
+        form {
+            color: var(--cor-basica1);
+            margin: 50px;
+            border-radius: 15px;
+            background-image: linear-gradient(45deg, #1A2E40, #3D5A73 60%);
+            padding: 50px 50px;
+        }
+
+        fieldset label {
+            margin: 10px;
+            display: block;
+        }
+
+        legend {
+            text-shadow: 1px 1.5px 1px var(--cor-basica2);
+            color: var(--cor-basica1);
+            font-size: 20px;
+        }
+
+        footer {
+            text-shadow: 1px 1.5px 1px var(--cor-basica2);
+            border-radius: 15px;
+            padding: 1px 0px;
+            color: var(--cor-basica1);
+            text-align: center;
+            background-image: linear-gradient(45deg, #1A2E40, #3D5A73 60%);
+        }
+
+        h2 {
+            text-align: center;
+            text-shadow: 1px 1.5px 1px var(--cor-basica2);
+            color: var(--cor-basica1);
+        }
+
+        h1 {
+            display: block;
+            margin: 0 auto;
+            text-shadow: 1px 1.5px 1px var(--cor-basica2);
+            color: var(--cor-basica1);
+            text-align: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <section class="logoheader">
+            <img src="Image/Firefly.png" alt="icone da página" width="120" height="120">
+            </image>
+            <h1>Vivendo a Servir</h1>
+            <h2>Página de cadastro</h2>
+        </section>
+    </header>
+    <main>
+        <form action="formulário de cadastro" method="post">
+            <fieldset>
+                <legend>Dados Pessoas</legend>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" pattern="[A-Za-zÀ-ÿ\s]+"
+                    title=" nome deve conter apenas letras, não utilize número ou síbolos.">
+
+                <label for="CPF">CPF:</label>
+                <input type="text" id="cpf" name="cpf" maxlength="11" pattern="\d{11}"
+                    title="Digite o CPF com 11 dígitos, sem traços e pontos.">
+
+                <label for="data-nascimento">Data de Nascimento:</label>
+                <input type="date" id="data-nascimento" name="data-nascimento">
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" pattern="-?[0-9]+([.,][0-9]+)?"
+                    title="Digite um numero com 9 digitos">
+
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" name="cep" pattern="[0-9]{5}-[0-9]{3}" title="Digite seu CEP">
+
+                <label for="e-mail">E-mail:</label>
+                <input type="email" id="email" name="email" title="Digite seu e-mail">
+
+                <!-- Botão de enviar -->
+                <button type="submit" id="inscricao" value="Enviar">
+                    Enviar
+                </button>
+
+
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p class="pfooter">Pensado por Bryan Luka &#128084; <br> &copy; 2026. Todos os direitos reservados.<br> Por um
+            Mundo
+            Melhor&trade;</p>
+    </footer>
+</body>
+
+</html>
