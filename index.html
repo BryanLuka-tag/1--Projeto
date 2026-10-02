@@ -20,14 +20,15 @@
 
         <div class="conteudo">
             <nav>
-                <button id="sobre">Sobre</button>
-                <button id="cadastro">Cadastro</button>
-                <button id="doacao">Doação</button>
+                <button onclick="window.location.href='#sobre'">Sobre</button>
+                <button onclick="window.open('cadastro.html', '_blank')">Cadastro</button>
+                <button onclick="window.open('doacao.html', '_blank')">Doação</button>
             </nav>
         </div>
+
     </header>
 
-    <main>
+    <main id="appdom">
 
         <img class="imageprincipal" src="Image/imagem princiapal.png" alt="imagem representando ONG">
 
@@ -46,7 +47,7 @@
             colaboradores e parceiros em torno de um propósito comum: ajudar, acolher e transformar vidas por
             meio da ação social.
 
-        <h2>Sobre</h2>
+        <h2 id="sobre">Sobre</h2>
         <p>
             Somos uma organização não governamental dedicada a promover ações sociais e contribuir para uma
             sociedade mais humana, solidária e inclusiva. Nosso trabalho nasceu do desejo de ajudar pessoas,
@@ -70,6 +71,7 @@
             Mundo
             Melhor&trade;</p>
     </footer>
+    <script type="module" src="js/app.js"></script>
 </body>
 
 </html>
